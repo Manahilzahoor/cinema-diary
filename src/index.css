@@ -442,3 +442,134 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
+
+@media (max-width: 1200px) {
+  .movie-cards-container,
+  .watched-grid {
+    padding: 1rem 2rem;
+  }
+  .watched-summary,
+  .watched-summary h1,
+  .watched-summary h2 {
+    padding: 1rem 2rem;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-heading {
+    font-size: 3rem;
+    max-width: 80%;
+  }
+  .movie-cards-container,
+  .watched-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    padding: 1rem 1rem;
+  }
+  .details img {
+    width: 50%;
+  }
+  .search {
+    width: 100%;
+    font-size: 2rem;
+    padding: 1.2rem 1.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 55%;
+  }
+  .hero {
+    padding: 2rem 0.5rem;
+    height: auto;
+  }
+  .hero-heading {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+  .hero-content {
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+  }
+  .nav-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .movie-cards-container,
+  .watched-grid {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+  .movie-card img {
+    height: 180px;
+  }
+  .movie-card.watched {
+    max-width: 100%;
+    min-height: 250px;
+  }
+  .details-overview {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .details img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .watched-summary h1,
+  .watched-summary h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .footer {
+    padding: 1.2rem 1rem;
+    font-size: 1.2rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 48%;
+  }
+  body {
+    padding: 0.5rem;
+  }
+  .hero-heading {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .search {
+    font-size: 1.4rem;
+    padding: 0.8rem 1rem;
+    width: 100%;
+  }
+  .movie-card img {
+    height: 120px;
+  }
+  .details {
+    padding: 0.5rem;
+  }
+  .details-overview {
+    padding: 0.5rem;
+  }
+  .watched-summary {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .watched-summary h1,
+  .watched-summary h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .footer {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
