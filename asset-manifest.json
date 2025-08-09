@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cinema-diary/static/css/main.211b10f4.css",
+    "main.js": "/cinema-diary/static/js/main.e83184cf.js",
+    "index.html": "/cinema-diary/index.html",
+    "main.211b10f4.css.map": "/cinema-diary/static/css/main.211b10f4.css.map",
+    "main.e83184cf.js.map": "/cinema-diary/static/js/main.e83184cf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.211b10f4.css",
+    "static/js/main.e83184cf.js"
+  ]
+}
