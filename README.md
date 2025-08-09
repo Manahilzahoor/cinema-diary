@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# CinemaDiary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CinemaDiary is a React web application that lets you search for movies, view details, and maintain your own watchlist. Powered by the OMDb API, it provides a smooth and interactive movie discovery experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- 🔍 **Search Movies:** Find movies by title using the OMDb API.
+- ⭐ **Rate Movies:** Add your own ratings to movies you’ve watched.
+- 📝 **Watchlist:** Keep track of movies you’ve watched, with persistent storage.
+- 📊 **Statistics:** See average IMDb ratings, your ratings, and average runtime.
+- 🎬 **Movie Details:** View detailed information about each movie, including cast, director, and plot.
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Live Demo](https://Manahilzahoor.github.io/cinema-diary/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/) (v14 or newer recommended)
+- [npm](https://www.npmjs.com/)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Manahilzahoor/cinema-diary.git
+   cd cinema-diary
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the development server:**
+   ```sh
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-### `npm run eject`
+### Build for Production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```sh
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The optimized build will be in the `build/` directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project uses [gh-pages](https://www.npmjs.com/package/gh-pages) for deployment. To deploy:
 
-## Learn More
+```sh
+npm run deploy
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+src/
+  App.js
+  StarRating.js
+  useMovies.js
+  useKey.js
+  useLocslStorageState.js
+  ...
+public/
+  index.html
+  ...
+```
 
-### Code Splitting
+## Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **OMDb API Key:**  
+  The app uses a demo OMDb API key. For production, get your own key from [OMDb API](http://www.omdbapi.com/apikey.aspx) and update it in [`src/App.js`](src/App.js) and [`src/useMovies.js`](src/useMovies.js).
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT License.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with 🍿 by [Manahil Zahoor](https://github.com/Manahilzahoor)
